@@ -53,7 +53,7 @@ class Game{
                      x = 500-allPlayers[plr].distance;
                      y=500;
                      
-                     players[index -1].x = x;
+                     players[index -1].x = x;   
                      players[index - 1].y = y;
                        
                      if(index === player.index){
@@ -73,8 +73,8 @@ class Game{
                  if (index === player.index){
                     stroke(10);
                     fill("red");
-                    // ellipse(x,y,60,60);
-                    players[index - 1].shapeColor = "red";
+                    // ellipse(x,y,60,60);  //Comment from pro: commented this line
+                    players[index - 1].shapeColor = "red";  //Comment from pro: here it was cars[index-1] instead of that put players[index-1]
                     camera.position.x = displayWidth/2;
                     camera.position.y = players[index-1].y
                   }
